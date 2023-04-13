@@ -7,3 +7,8 @@ spec:
       namespace: kube-system
   values:
     profile: openshift
+    cni:
+      provider: "multus"
+    sidecarInjectorWebhook:
+      injectedAnnotations:
+        k8s.v1.cni.cncf.io/networks: default/istio-cni

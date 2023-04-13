@@ -4,6 +4,4 @@ kind: NetworkAttachmentDefinition
 metadata:
   name: istio-cni
   namespace: default
-  labels:
-    operator.istio.io/component: "Cni"
 {{- end }}

@@ -1,5 +1,9 @@
 defaults:
   cni:
+    # Custom configuration happens based on the CNI provider.
+    # Possible values: "default", "multus"
+    provider: "default"
+
     hub: ""
     tag: ""
     variant: ""
